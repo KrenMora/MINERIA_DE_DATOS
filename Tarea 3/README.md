@@ -1,66 +1,59 @@
-# Análisis de Patrones de Asociación con el Algoritmo Apriori  
-**Dataset:** Graduados de Educación Superior 2023  
-https://datos.ine.gob.gt/dataset/educacion-superior-graduados
+# Análisis de Patrones de Asociación con el Algoritmo FP Growth  
+**Dataset:** Violencia intrafamiliar año 2024   
+[Violencia intrafamiliar año 2024](https://datos.ine.gob.gt/dataset/violencia-intrafamiliar/resource/73875737-52c9-41b3-accf-37b44e534bec)
 ---
 
 ## 📘 Introducción
-El presente análisis aplica el algoritmo **Apriori** sobre los datos de graduados de educación superior en Guatemala, con el propósito de descubrir asociaciones entre variables demográficas y el tipo de institución educativa (sector público o privado).  
-A continuación, se presentan tres patrones relevantes obtenidos con parámetros de soporte y confianza representativos del conjunto de datos.
+El presente análisis aplica el algoritmo **FP Growth** sobre los datos de Violencia intrafamiliar año 2024 en Guatemala, con el propósito de descubrir asociaciones entre variables. A continuación, se presentan tres patrones relevantes obtenidos con parámetros de soporte y confianza representativos del conjunto de datos.
 
 ---
 
 ## 🔹 Patrón 1
 **Regla:**  
-`{Sector = Público}  →  {Pueblo_Pertenencia = Ladino}`  
+`{VIC_EST_CIV = [2,5]} → {VIC_SEXO = [1,2]}`  
 
 **Métricas:**  
-- Soporte: `0.2216`  
-- Confianza: `0.7737`  
+- Soporte: ` 0.5618`  
+- Confianza: `1.0000`  
 
 **Interpretación:**  
-Existe una asociación significativa entre estudiar en una **institución pública** y pertenecer al grupo **Ladino**.  
-Entre los graduados del sector público, aproximadamente el **77%** se identifican como Ladinos.  
-Esto sugiere que la mayoría de estudiantes que se gradúan en el sector público pertenecen a este grupo étnico, posiblemente reflejando la **composición demográfica general del país**.
+Entre las víctimas que tienen hijos, más de la mitad aprox.56 % están casadas o viven en unión libre(2,,5). Esto sugiere que la violencia intrafamiliar ocurre con mayor frecuencia dentro de relaciones formales o convivencias estables, donde hay hijos en común y, posiblemente, una relación de dependencia o convivencia prolongada.
 
 ---
 
 ## 🔹 Patrón 2
 **Regla:**  
-`{Pueblo_Pertenencia = Ignorado}  →  {Sector = Privado}`  
+`{VIC_EDAD=[39,99]} →  {AGR_EDAD=[40,99]}`  
 
 **Métricas:**  
-- Soporte: `0.3809`  
-- Confianza: `0.9439`  
+- Soporte: `0.2184`  
+- Confianza: `0.6481`  
 
 **Interpretación:**  
-Cuando el valor de **Pueblo de Pertenencia** se registró como **“Ignorado”**, el **94%** de esos casos corresponden a **graduados del sector privado**.  
-Esto podría deberse a **diferencias en los procesos administrativos** del sector privado al momento de recopilar los datos del estudiante, reflejando una menor uniformidad en la recolección de información étnica.
+Cuando el agresor trabaja y tiene entre **40 y 99  años**, la víctima suele tener entre 39 y 99 años. Esto sugiere relaciones con ***diferencia de edad leve donde el agresor posee estabilidad laboral***, pero puede mantener control económico o psicológico sobre la víctima.
+
 
 ---
 
 ## 🔹 Patrón 3
 **Regla:**  
-`{Sexo = Mujer}  →  {Sector = Privado}`  
+`{VIC_ESCOLARIDAD = [31,99]}  → {AGR_TRABAJA = [1,9]}`  
 
 **Métricas:**  
-- Soporte: `0.4095`  
-- Confianza: `0.7009`  
+- Soporte: `0.334206`  
+- Confianza: `1.0000`  
 
 **Interpretación:**  
-Aproximadamente el **70% de las mujeres graduadas** lo hicieron en el **sector privado**, lo cual muestra una **tendencia predominante de mujeres en la educación privada**.  
-Esto podría estar relacionado con factores como mayor cobertura geográfica y accesibilidad de universidades privadas en comparación con las públicas o de horarios más flexibles
+El soporte del **33 % indica que un tercio de todos los casos rurales presentan esta combinación**, lo que lo convierte en un patrón frecuente y socialmente relevante para orientar programas de prevención en comunidades rurales.En los casos de violencia intrafamiliar ocurridos en área rural, todas las víctimas con ***nivel educativo entre 31 y 99*** tienen agresores que trabajan.
+
 
 
 ## 📬 Resultados 
 ```
-     lhs                                                      rhs                           support   confidence coverage  lift      count
-
-[5]  {Sector=Público}                                      => {Pueblo_Pertenencia=Ladino}   0.2216029 0.7736914  0.2864229 1.4669313  3976
-
-[13] {Pueblo_Pertenencia=Ignorado}                         => {Sector=Privado}              0.3808940 0.9439227  0.4035225 1.3228040  6834
-
-[21] {Sexo=Mujer}                                          => {Sector=Privado}              0.4095419 0.7008775  0.5843273 0.9822030  7348
-
-[50] {Departamento=Guatemala, Sector=Privado}              => {Sexo=Mujer}                  0.4095419 0.5739280  0.7135771 0.9822030  7348
+     lhs                                                      rhs                           support   confidence coverage        
+{VIC_EST_CIV=[2,5)}                                        => {VIC_SEXO=[1,2]}              0.5618602  1.0000000 1.000000
+{VIC_EDAD=[39,99]}                                         => {AGR_EDAD=[40,99]}            0.2184474  0.6481064 1.7640974  
+{VIC_ESCOLARIDAD=[31,99]}                                  => {AGR_TRABAJA=[1,9]}           0.3342406  1.0000000 1.000000  
 
 ```
+

@@ -1,6 +1,6 @@
 # Análisis de Patrones de Agrupación con Clúster K-Means  
 **Dataset:** Violencia Intrafamiliar 2024  
-[https://datos.ine.gob.gt/dataset/violencia-intrafamiliar/resource/73875737-52c9-41b3-accf-37b44e534bec](https://datos.ine.gob.gt/dataset/violencia-intrafamiliar/resource/73875737-52c9-41b3-accf-37b44e534bec)  
+[Violencia intrafamiliar año 2024](https://datos.ine.gob.gt/dataset/violencia-intrafamiliar/resource/73875737-52c9-41b3-accf-37b44e534bec)
 ---
 
 ## 📘 Introducción  
@@ -47,3 +47,4 @@ También puede representar relaciones asimétricas donde la diferencia de edad c
 ## 📬 Resultados  
 
 ![Gráfico de K-Means](Rplot01.png)
+

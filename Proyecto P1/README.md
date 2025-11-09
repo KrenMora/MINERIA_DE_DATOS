@@ -122,7 +122,7 @@ Una relación moderadamente fuerte, sugiriendo que **las defunciones de personas
 El **mapa de calor** representa la distribución de las **defunciones** según la **edad del fallecido** (eje X) y el **mes de ocurrencia** (eje Y).
 Los colores más intensos (rojos) indican una **mayor frecuencia de muertes**, mientras que los tonos claros reflejan menor incidencia.
 
-![Gráfico de K-Means](Img\K1-Defuncion.png)
+![Gráfico de K-Means](https://github.com/KrenMora/MINERIA_DE_DATOS/blob/main/Proyecto%20P1/Img/K1-Defuncion.png)
 
 El análisis sugiere que la **mortalidad en Guatemala durante 2022–2023** se concentra en **adultos mayores**, con picos de incidencia durante los **meses medios del año (marzo–agosto)**.
 Este patrón refleja la vulnerabilidad de este grupo etario frente a enfermedades crónicas y respiratorias, reforzando la necesidad de políticas de **prevención y atención médica especializada para la población de la tercera edad**.
@@ -133,7 +133,7 @@ Este patrón refleja la vulnerabilidad de este grupo etario frente a enfermedade
 El gráfico de cajas muestra la **distribución de la edad promedio de los fallecidos** por **departamento**, agrupada en **tres clústeres** identificados mediante el algoritmo **K-Means**.
 Cada color representa un grupo etario con características comunes en los registros de defunciones.
 
-![Gráfico de K-Means](Img\K2-Defuncion.png)
+![Gráfico de K-Means](https://github.com/KrenMora/MINERIA_DE_DATOS/blob/main/Proyecto%20P1/Img/K2-Defuncion.png)
 
 #### 🔴 Clúster 1 – Adultos jóvenes y adultos medios
 
@@ -252,7 +252,7 @@ Esto sugiere que **la mayoría de los fallecimientos fetales no ocurrieron de fo
 El gráfico muestra el resultado del análisis de **agrupamiento K-Means**, aplicado a las variables **Edad de la Madre (EDADM)** y **Semanas de Gestación (SEMGES)** en casos de **defunciones fetales**.
 Cada color representa un **clúster** con características similares entre los registros, mientras que los triángulos negros indican los **centros de cada grupo**.
 
-![Gráfico de K-Means](Img\K1-Fetal.png)
+![Gráfico de K-Means](https://github.com/KrenMora/MINERIA_DE_DATOS/blob/main/Proyecto%20P1/Img/K1-Fetal.png)
 
 
 #### 🔴 Clúster 1 – Madres jóvenes con embarazos a término
@@ -298,7 +298,7 @@ Estos resultados refuerzan la importancia de **diferenciar las estrategias de co
 El gráfico muestra la distribución de la **edad de la madre** en relación con el **tipo de parto** (*1 = Parto Vaginal, 2 = Cesárea*), agrupadas en tres clústeres generados mediante el algoritmo **K-Means**.
 Cada color representa un grupo de madres con características similares en cuanto a edad y tipo de parto.
 
-![Gráfico de K-Means](Img\K2-Fetal.png)
+![Gráfico de K-Means](https://github.com/KrenMora/MINERIA_DE_DATOS/blob/main/Proyecto%20P1/Img/K2-Fetal.png)
 
 #### 🔴 Clúster 1 – Madres adolescentes o muy jóvenes
 
@@ -381,6 +381,7 @@ Organización Mundial de la Salud (OMS). (2022). *Trends in maternal mortality 2
 (S/f-b). Unicef.org. Recuperado el 9 de noviembre de 2025, de https://www.unicef.org/guatemala/informes/situacion-ninez-2023
 
 (S/f-c). Paho.org. Recuperado el 9 de noviembre de 2025, de https://www.paho.org/es/documentos/analisis-situacion-salud-guatemala-2022
+
 
 
 

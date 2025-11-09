@@ -14,8 +14,6 @@ El análisis permite identificar relaciones entre variables demográficas y soci
 
 ## Introducción
 
-El presente proyecto tiene como finalidad **aplicar técnicas de minería de datos** sobre los registros de defunciones de Guatemala, con el propósito de **descubrir patrones y relaciones entre variables demográficas, sociales y médicas**.  
-
 Mediante los algoritmos **Apriori** y **FP-Growth**, se identifican **reglas de asociación** que revelan comportamientos frecuentes en los datos, como la relación entre edad, sexo, nivel educativo, estado civil y causa de muerte.  El trabajo también incluye un proceso previo de **limpieza, integración y selección de variables relevantes**, seguido por la generación de patrones interpretables que faciliten la **identificación de segmentos de población con mayor vulnerabilidad**.
 
 ## Situación Actual en Guatemala
@@ -383,6 +381,7 @@ Organización Mundial de la Salud (OMS). (2022). *Trends in maternal mortality 2
 (S/f-b). Unicef.org. Recuperado el 9 de noviembre de 2025, de https://www.unicef.org/guatemala/informes/situacion-ninez-2023
 
 (S/f-c). Paho.org. Recuperado el 9 de noviembre de 2025, de https://www.paho.org/es/documentos/analisis-situacion-salud-guatemala-2022
+
 
 
 

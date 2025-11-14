@@ -45,10 +45,10 @@ Estos atributos ayudan a identificar patrones sociodemográficos asociados a cad
 
 A continuación se explica cada rama del árbol de manera clara:
 
-### ### 🌿 **Rama 1 – Víctima Mujer (`VIC_SEXO = 2`)**
+### ### **Rama 1 – Víctima Mujer (`VIC_SEXO = 2`)**
 
 **Predicción principal:**
-➡️ **El agresor tiende a ser Hombre (`AGR_SEXO = 1`)**
+**El agresor tiende a ser Hombre (`AGR_SEXO = 1`)**
 
 Esto se debe a que en casos de violencia intrafamiliar,
 la mayoría de agresores registrados son hombres cuando la víctima es mujer.
@@ -99,7 +99,7 @@ El árbol usa ahora la escolaridad:
 #### **2.2.2 Escolaridad desconocida (`ESC_OK = 'Sin dato'`)**
 
 **Predicción:**
-➡️ **Aumenta la probabilidad de agresor Mujer (`AGR_SEXO = 2`)**
+**Aumenta la probabilidad de agresor Mujer (`AGR_SEXO = 2`)**
 
 **Interpretación:**
 
@@ -127,4 +127,5 @@ Este análisis puede servir como base para:
 * Identificar perfiles de riesgo.
 * Crear estrategias de prevención.
 * Orientar políticas públicas y trabajo social.
+
 
